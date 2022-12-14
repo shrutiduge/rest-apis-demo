@@ -1,0 +1,84 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Student information API",
+    "description": "Get student details"
+  },
+  "paths": {
+    "/students": {
+      "get": {
+        "summary": "Get students list",
+        "responses": {
+          "200": {
+            "description": "We are getting data of all students.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "students": {
+                      "$ref": "#/components/schemas/students"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "students": {
+        "description": "List of all students in a school",
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/student"
+        }
+      },
+      "student": {
+        "type": "object",
+        "required": [
+          "name",
+          "age",
+          "grade"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "number"
+          },
+          "grade": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "ApiKey": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-Api-Key"
+      }
+    }
+  },
+  "security": [
+    {
+      "ApiKey": []
+    }
+  ]
+}
