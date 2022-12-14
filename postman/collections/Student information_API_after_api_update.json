@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "4934373d-7bfb-44dc-af9c-7e8608378d10",
+		"name": "Student information_API_after_api_update",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "24922754-4934373d-7bfb-44dc-af9c-7e8608378d10"
+	},
+	"item": [
+		{
+			"name": "Get all student data",
+			"id": "b2eccdeb-ae47-47ba-8d78-0d6e72aa0cd7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/students",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create student data",
+			"id": "bf6b93e6-e3d0-4e23-b4ec-03f3b738abcf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Shruti\", \"grade\": 25, \"age\": 14}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/students",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update list with new entries",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8fc9416a-ea1f-42b9-9cf0-d999db8ec234",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "08250115-492f-4551-8dd4-8fa4f959bdbf",
+						"exec": [
+							"pm.test(\"Response should be an array\", function () {console.log(pm.response);",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(Array.isArray(jsonData.students)).to.be.true;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "8eca4769-d9b8-49d0-ae47-7ef0b32358bd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Shruti\", \"grade\": 25, \"age\": 14}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/students",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update list with students with >15 grade",
+			"id": "73159bdc-7a58-436b-bf9b-40548729e0ed",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Will\", \"grade\": 11, \"age\": 15}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/students",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a student from the list",
+			"id": "645be326-f23d-4b0b-a204-4dfeeed2d1ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/students",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Docker Port Forwarding",
+			"id": "75063037-26fc-4f5c-97c7-71ae46567b13",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5005/students",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5005",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
