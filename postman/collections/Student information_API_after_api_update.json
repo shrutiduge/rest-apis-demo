@@ -1,14 +1,14 @@
 {
 	"info": {
-		"_postman_id": "4934373d-7bfb-44dc-af9c-7e8608378d10",
+		"_postman_id": "873fc3c6-9d18-4e41-85ba-1a8b0a96c569",
 		"name": "Student information_API_after_api_update",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "24922754-4934373d-7bfb-44dc-af9c-7e8608378d10"
+		"_uid": "24922754-873fc3c6-9d18-4e41-85ba-1a8b0a96c569"
 	},
 	"item": [
 		{
 			"name": "Get all student data",
-			"id": "b2eccdeb-ae47-47ba-8d78-0d6e72aa0cd7",
+			"id": "7b1c8e30-7a1a-46e4-859e-562f9447180c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -34,7 +34,7 @@
 		},
 		{
 			"name": "Create student data",
-			"id": "bf6b93e6-e3d0-4e23-b4ec-03f3b738abcf",
+			"id": "44be028c-561c-4f48-9179-818d41c8e6cf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -68,7 +68,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "8fc9416a-ea1f-42b9-9cf0-d999db8ec234",
+						"id": "d6c675a8-786d-4a34-8c71-becc06f3e4c1",
 						"exec": [
 							""
 						],
@@ -78,7 +78,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "08250115-492f-4551-8dd4-8fa4f959bdbf",
+						"id": "121b45cb-9f6f-4001-93d1-b0b7c599b95d",
 						"exec": [
 							"pm.test(\"Response should be an array\", function () {console.log(pm.response);",
 							"    var jsonData = pm.response.json();",
@@ -89,7 +89,7 @@
 					}
 				}
 			],
-			"id": "8eca4769-d9b8-49d0-ae47-7ef0b32358bd",
+			"id": "57b11735-79bc-413d-9a6f-2a73663fc1f6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -119,7 +119,7 @@
 		},
 		{
 			"name": "Update list with students with >15 grade",
-			"id": "73159bdc-7a58-436b-bf9b-40548729e0ed",
+			"id": "8b81ee18-4238-40ed-b813-b96c5f5c74f3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -149,7 +149,7 @@
 		},
 		{
 			"name": "Delete a student from the list",
-			"id": "645be326-f23d-4b0b-a204-4dfeeed2d1ad",
+			"id": "97d303ae-8cea-4412-a556-5e5982ab6386",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -184,7 +184,7 @@
 		},
 		{
 			"name": "Docker Port Forwarding",
-			"id": "75063037-26fc-4f5c-97c7-71ae46567b13",
+			"id": "c67a4684-3466-4241-a19d-9b8f9f344ba8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},

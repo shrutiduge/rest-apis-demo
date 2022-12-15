@@ -24,13 +24,55 @@
                 }
               }
             }
-          },
-          "500": {
-            "description": "Unexpected error",
+          }
+        }
+      },
+      "post": {
+        "summary": "Add students to the list",
+        "responses": {
+          "200": {
+            "description": "We are getting new student data.",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "$ref": "#/components/schemas/students"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "Get a list of students with grade that's more than 15.",
+        "responses": {
+          "200": {
+            "description": "Here's a list of students with >15 grade.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "new_list": {
+                      "$ref": "#/components/schemas/students"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "delete students with age >18 from the list",
+        "responses": {
+          "200": {
+            "description": "We are getting students with less than 18 age.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/students"
                 }
               }
             }

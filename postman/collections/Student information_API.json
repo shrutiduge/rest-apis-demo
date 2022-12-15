@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "b657507d-a378-4775-b80a-c61953e22a69",
+		"_postman_id": "733aaa2f-682d-44c8-8cea-25794b92cecb",
 		"name": "Student information_API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "24867615-b657507d-a378-4775-b80a-c61953e22a69"
+		"_uid": "24922754-733aaa2f-682d-44c8-8cea-25794b92cecb"
 	},
 	"item": [
 		{
@@ -12,7 +12,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "436c0203-21c7-4060-beda-ffff44282e88",
+						"id": "bc4c92db-f8a1-44e2-baf9-8d2570e164b4",
 						"exec": [
 							"pm.test(\"Your test name\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -26,7 +26,7 @@
 					}
 				}
 			],
-			"id": "a45123ca-30fa-4388-9a5e-bdd44894e049",
+			"id": "bf6a62a5-56d1-4967-92c1-d7609125ab6b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -56,7 +56,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "2c14c113-8565-4bce-bcd3-aed02a7d0777",
+						"id": "a26a1848-10c2-4169-8e94-d3924588c65b",
 						"exec": [
 							"pm.test(\"Your test name\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -70,7 +70,7 @@
 					}
 				}
 			],
-			"id": "d48e2711-d6d4-47fe-a437-7c979cd5e4f7",
+			"id": "215c223c-5ddc-40ee-922e-759244663b8d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -104,7 +104,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "b73e7cac-ef0d-445b-9c58-db31b70122b0",
+						"id": "73907e51-32c0-42ce-9bab-1666471509cf",
 						"exec": [
 							""
 						],
@@ -114,7 +114,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ec0f2af5-695a-47f6-95cb-429cab48ab3d",
+						"id": "1c7cb208-ba19-4358-88c3-56a8b67d47bf",
 						"exec": [
 							"ppm.test(\"Your test name\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -128,7 +128,7 @@
 					}
 				}
 			],
-			"id": "d28404a3-743d-4d87-8d8a-0e6d93536f59",
+			"id": "bbd443cd-43cc-4a5f-b806-0511b98ce954",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -162,7 +162,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "67b43004-1b31-4eb4-a11b-8a0c49213c65",
+						"id": "0a33d8e9-086a-490b-8fe3-11b716a94d16",
 						"exec": [
 							"pm.test(\"Your test name\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -176,7 +176,7 @@
 					}
 				}
 			],
-			"id": "81b59aff-cff7-48d4-af3d-f396484057d5",
+			"id": "e7792631-13f7-4536-8037-96ca5c293e8e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -210,7 +210,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "f6ceb39c-4150-4062-aebd-dec09fc83d37",
+						"id": "4880757f-1438-47d5-9e27-2bc9492a2da2",
 						"exec": [
 							"pm.test(\"Your test name\", function () {",
 							"    var jsonData = pm.response.json();",
@@ -224,7 +224,7 @@
 					}
 				}
 			],
-			"id": "f14a1744-ec2a-4509-a207-a8b2bde7521f",
+			"id": "21d84444-8799-4fa3-86af-ff51e7214c88",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -259,7 +259,7 @@
 		},
 		{
 			"name": "Docker Port Forwarding",
-			"id": "84edee46-43f5-4fb6-a53c-509255c3dcee",
+			"id": "36246706-c9c2-4233-b1f7-bb3f3b27c653",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
